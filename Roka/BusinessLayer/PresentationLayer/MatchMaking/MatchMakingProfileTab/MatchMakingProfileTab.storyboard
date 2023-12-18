@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Semibold.ttf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Match Making Profile Tab View Controller-->
+        <scene sceneID="8fg-oz-OhS">
+            <objects>
+                <viewController storyboardIdentifier="MatchMakingProfileTabViewController" id="Thj-m8-8a1" customClass="MatchMakingProfileTabViewController" customModule="Roka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4vR-nd-ZfQ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmr-ZU-9Ey">
+                                <rect key="frame" x="0.0" y="57" width="390" height="1"/>
+                                <color key="backgroundColor" name="AppSeparator"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="nxt-V8-ycy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84B-i1-uQD">
+                                <rect key="frame" x="0.0" y="47" width="390" height="714"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applifyLogo" translatesAutoresizingMaskIntoConstraints="NO" id="n2a-uk-zh4">
+                                        <rect key="frame" x="105" y="195.66666666666663" width="180" height="180"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="c6W-pU-gRM"/>
+                                            <constraint firstAttribute="height" constant="180" id="wPR-B3-dhb"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="LIR-x6-Nqf">
+                                        <rect key="frame" x="170" y="385.66666666666669" width="50" height="66"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Von-ur-Y3m">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="18"/>
+                                                <color key="textColor" red="0.062745098040000002" green="0.062745098040000002" blue="0.062745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikC-cA-JBr">
+                                                <rect key="frame" x="25" y="66" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="LIR-x6-Nqf" firstAttribute="top" secondItem="n2a-uk-zh4" secondAttribute="bottom" constant="10" id="9TS-RT-Qhy"/>
+                                    <constraint firstItem="LIR-x6-Nqf" firstAttribute="centerX" secondItem="84B-i1-uQD" secondAttribute="centerX" id="AWh-uj-PpS"/>
+                                    <constraint firstItem="n2a-uk-zh4" firstAttribute="centerX" secondItem="84B-i1-uQD" secondAttribute="centerX" id="EEE-xA-lVJ"/>
+                                    <constraint firstItem="n2a-uk-zh4" firstAttribute="centerY" secondItem="84B-i1-uQD" secondAttribute="centerY" multiplier="0.8" id="fbL-tc-Qeo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pTc-ev-z4Q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pTc-ev-z4Q" firstAttribute="trailing" secondItem="nmr-ZU-9Ey" secondAttribute="trailing" id="8uy-Zl-wJE"/>
+                            <constraint firstItem="84B-i1-uQD" firstAttribute="bottom" secondItem="pTc-ev-z4Q" secondAttribute="bottom" id="Gti-rt-ZC7"/>
+                            <constraint firstItem="nmr-ZU-9Ey" firstAttribute="top" secondItem="pTc-ev-z4Q" secondAttribute="top" constant="10" id="arh-sT-ZzN"/>
+                            <constraint firstItem="84B-i1-uQD" firstAttribute="leading" secondItem="pTc-ev-z4Q" secondAttribute="leading" id="ecZ-GU-q0q"/>
+                            <constraint firstItem="84B-i1-uQD" firstAttribute="top" secondItem="pTc-ev-z4Q" secondAttribute="top" id="qPw-AM-P6Y"/>
+                            <constraint firstItem="pTc-ev-z4Q" firstAttribute="trailing" secondItem="84B-i1-uQD" secondAttribute="trailing" id="xXV-1Y-2S7"/>
+                            <constraint firstItem="nmr-ZU-9Ey" firstAttribute="leading" secondItem="pTc-ev-z4Q" secondAttribute="leading" id="zsr-2n-Ptl"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_avatar" selectedImage="ic_avatar" id="zW6-ho-fEz"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YK8-Fg-XNj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="applifyLogo" width="55.666667938232422" height="55.666667938232422"/>
+        <image name="ic_avatar" width="32" height="32"/>
+        <namedColor name="AppSeparator">
+            <color red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

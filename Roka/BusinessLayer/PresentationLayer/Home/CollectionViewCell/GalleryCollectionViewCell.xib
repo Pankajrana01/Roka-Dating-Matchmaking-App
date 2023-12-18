@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF Pro Display Medium Italic.otf">
+            <string>SFProDisplay-MediumItalic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryCollectionViewCell" id="gTV-IL-0wX" customClass="GalleryCollectionViewCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hMh-in-bqS">
+                        <rect key="frame" x="0.0" y="0.0" width="192" height="210"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_gallery" translatesAutoresizingMaskIntoConstraints="NO" id="dWL-fP-MHN">
+                                <rect key="frame" x="0.0" y="0.0" width="192" height="210"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="Xya-gJ-b3S"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The purpose of my…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN1-qy-dCp">
+                                <rect key="frame" x="5" y="185.66666666666666" width="182" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-MediumItalic" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dWL-fP-MHN" firstAttribute="top" secondItem="hMh-in-bqS" secondAttribute="top" id="1nv-h0-3ve"/>
+                            <constraint firstAttribute="bottom" secondItem="dWL-fP-MHN" secondAttribute="bottom" id="BJA-u4-seZ"/>
+                            <constraint firstItem="dWL-fP-MHN" firstAttribute="leading" secondItem="hMh-in-bqS" secondAttribute="leading" id="RLy-xK-DPS"/>
+                            <constraint firstAttribute="trailing" secondItem="LN1-qy-dCp" secondAttribute="trailing" constant="5" id="Ury-ck-NBK"/>
+                            <constraint firstAttribute="bottom" secondItem="LN1-qy-dCp" secondAttribute="bottom" constant="10" id="bzr-0U-jH4"/>
+                            <constraint firstAttribute="trailing" secondItem="dWL-fP-MHN" secondAttribute="trailing" id="k9C-7V-w67"/>
+                            <constraint firstItem="LN1-qy-dCp" firstAttribute="leading" secondItem="hMh-in-bqS" secondAttribute="leading" constant="5" id="sOo-Sn-1Cn"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hMh-in-bqS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0Jo-vB-vv1"/>
+                <constraint firstItem="hMh-in-bqS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Qmh-z7-Jxc"/>
+                <constraint firstAttribute="bottom" secondItem="hMh-in-bqS" secondAttribute="bottom" id="YcW-2f-wFH"/>
+                <constraint firstAttribute="trailing" secondItem="hMh-in-bqS" secondAttribute="trailing" id="hxt-DM-Ua3"/>
+            </constraints>
+            <size key="customSize" width="192" height="202"/>
+            <connections>
+                <outlet property="backImageView" destination="dWL-fP-MHN" id="8fu-Ze-cAG"/>
+                <outlet property="imageCaption" destination="LN1-qy-dCp" id="Xf0-E6-veP"/>
+            </connections>
+            <point key="canvasLocation" x="80" y="74.644549763033169"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_gallery" width="152" height="211"/>
+    </resources>
+</document>

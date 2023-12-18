@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SharpGrotesk-SemiBold25.otf">
+            <string>SharpGrotesk-SemiBold25</string>
+        </array>
+        <array key="SharpSans-Semibold.otf">
+            <string>SharpSansTRIAL-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="GroupDetailHeaderViewCell" rowHeight="253" id="KGk-i7-Jjw" customClass="GroupDetailHeaderViewCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="433" height="253"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="433" height="253"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="nXM-JL-0Nn">
+                        <rect key="frame" x="166.66666666666666" y="22" width="99.999999999999972" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="2Yv-eM-Gxd"/>
+                            <constraint firstAttribute="height" constant="100" id="Tg3-lU-exR"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="50"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2HZ-1L-7Xm">
+                        <rect key="frame" x="10" y="137" width="413" height="26"/>
+                        <fontDescription key="fontDescription" name="SharpGrotesk-SemiBold25" family="Sharp Grotesk" pointSize="14"/>
+                        <color key="textColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f12-6S-oe3">
+                        <rect key="frame" x="20" y="207.33333333333334" width="74.666666666666671" height="21.333333333333343"/>
+                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="16"/>
+                        <color key="textColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9S-tP-F6K">
+                        <rect key="frame" x="313" y="203" width="100" height="30"/>
+                        <color key="backgroundColor" red="0.67843137249999996" green="0.60784313729999995" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="P1Y-zp-Myk"/>
+                            <constraint firstAttribute="width" constant="100" id="Zev-RN-a71"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="12"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Add a friend">
+                            <color key="titleColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.062745098039215685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="addMemberAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4Kz-z7-8hl"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="nXM-JL-0Nn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="4ZN-3K-Ldw"/>
+                    <constraint firstItem="2HZ-1L-7Xm" firstAttribute="centerX" secondItem="nXM-JL-0Nn" secondAttribute="centerX" id="58C-Zq-WBk"/>
+                    <constraint firstItem="nXM-JL-0Nn" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="8YL-rK-DLd"/>
+                    <constraint firstAttribute="bottom" secondItem="F9S-tP-F6K" secondAttribute="bottom" constant="20" id="G1x-Rx-LXl"/>
+                    <constraint firstItem="f12-6S-oe3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="IMh-3h-fWH"/>
+                    <constraint firstItem="F9S-tP-F6K" firstAttribute="top" secondItem="2HZ-1L-7Xm" secondAttribute="bottom" constant="40" id="RpQ-VV-Y7X"/>
+                    <constraint firstItem="2HZ-1L-7Xm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="TBb-od-2bG"/>
+                    <constraint firstItem="2HZ-1L-7Xm" firstAttribute="top" secondItem="nXM-JL-0Nn" secondAttribute="bottom" constant="15" id="ZAD-Kk-d30"/>
+                    <constraint firstAttribute="trailing" secondItem="2HZ-1L-7Xm" secondAttribute="trailing" constant="10" id="a91-QY-PY3"/>
+                    <constraint firstItem="f12-6S-oe3" firstAttribute="centerY" secondItem="F9S-tP-F6K" secondAttribute="centerY" id="fHr-Oj-yWX"/>
+                    <constraint firstAttribute="trailing" secondItem="F9S-tP-F6K" secondAttribute="trailing" constant="20" id="gBR-yv-BnO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addMemberButton" destination="F9S-tP-F6K" id="ODz-fR-hms"/>
+                <outlet property="groupImage" destination="nXM-JL-0Nn" id="lkZ-6V-qbT"/>
+                <outlet property="groupName" destination="2HZ-1L-7Xm" id="0ba-cv-l1I"/>
+                <outlet property="totalMemberCountLbl" destination="f12-6S-oe3" id="ZDt-Vz-8yv"/>
+            </connections>
+            <point key="canvasLocation" x="83.206106870229007" y="94.014084507042256"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Avatar" width="78" height="78"/>
+    </resources>
+</document>

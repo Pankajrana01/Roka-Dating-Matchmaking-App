@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.OTF">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="UserProfileCollectionViewCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="209"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="209"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z00-d1-4Hx">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="209"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask-1" translatesAutoresizingMaskIntoConstraints="NO" id="fkB-2N-Siq">
+                                <rect key="frame" x="0.0" y="0.0" width="362" height="209"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shadowImage" translatesAutoresizingMaskIntoConstraints="NO" id="the-yR-4w4">
+                                <rect key="frame" x="0.0" y="0.0" width="362" height="209"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RTm-CK-BHJ">
+                                <rect key="frame" x="10" y="194" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtI-2F-YoJ">
+                                <rect key="frame" x="10" y="199" width="342" height="0.0"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dKh-Cp-BML">
+                                <rect key="frame" x="123" y="183" width="116" height="26"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rtI-2F-YoJ" secondAttribute="bottom" constant="10" id="3Sl-UJ-dW8"/>
+                            <constraint firstItem="fkB-2N-Siq" firstAttribute="leading" secondItem="z00-d1-4Hx" secondAttribute="leading" id="4iy-Qs-1kg"/>
+                            <constraint firstAttribute="trailing" secondItem="rtI-2F-YoJ" secondAttribute="trailing" constant="10" id="66o-5G-MvL"/>
+                            <constraint firstAttribute="trailing" secondItem="fkB-2N-Siq" secondAttribute="trailing" id="8fT-jU-ruF"/>
+                            <constraint firstAttribute="bottom" secondItem="fkB-2N-Siq" secondAttribute="bottom" id="IOM-dU-54b"/>
+                            <constraint firstAttribute="trailing" secondItem="the-yR-4w4" secondAttribute="trailing" id="Kpv-Qw-2EH"/>
+                            <constraint firstAttribute="bottom" secondItem="the-yR-4w4" secondAttribute="bottom" id="NhK-Pn-W8h"/>
+                            <constraint firstItem="dKh-Cp-BML" firstAttribute="centerX" secondItem="z00-d1-4Hx" secondAttribute="centerX" id="YO6-p5-cqC"/>
+                            <constraint firstAttribute="bottom" secondItem="dKh-Cp-BML" secondAttribute="bottom" id="b9d-9z-ofG"/>
+                            <constraint firstItem="rtI-2F-YoJ" firstAttribute="leading" secondItem="z00-d1-4Hx" secondAttribute="leading" constant="10" id="g2k-iK-coI"/>
+                            <constraint firstItem="the-yR-4w4" firstAttribute="leading" secondItem="z00-d1-4Hx" secondAttribute="leading" id="gpT-ij-QcB"/>
+                            <constraint firstItem="RTm-CK-BHJ" firstAttribute="leading" secondItem="rtI-2F-YoJ" secondAttribute="leading" id="jb8-VV-abF"/>
+                            <constraint firstItem="the-yR-4w4" firstAttribute="top" secondItem="z00-d1-4Hx" secondAttribute="top" id="m2n-IB-ibm"/>
+                            <constraint firstItem="rtI-2F-YoJ" firstAttribute="top" secondItem="RTm-CK-BHJ" secondAttribute="bottom" constant="5" id="wEm-Ah-6tR"/>
+                            <constraint firstItem="fkB-2N-Siq" firstAttribute="top" secondItem="z00-d1-4Hx" secondAttribute="top" id="xVU-tv-oUE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="z00-d1-4Hx" secondAttribute="trailing" id="QqD-yX-ZjX"/>
+                <constraint firstAttribute="bottom" secondItem="z00-d1-4Hx" secondAttribute="bottom" symbolic="YES" id="c1F-iZ-xQv"/>
+                <constraint firstItem="z00-d1-4Hx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oth-6d-aQB"/>
+                <constraint firstItem="z00-d1-4Hx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="weh-oc-WMR"/>
+            </constraints>
+            <size key="customSize" width="362" height="209"/>
+            <connections>
+                <outlet property="descLabel" destination="rtI-2F-YoJ" id="3uP-T3-92S"/>
+                <outlet property="pageView" destination="dKh-Cp-BML" id="5Tt-Ne-oiJ"/>
+                <outlet property="profileImage" destination="fkB-2N-Siq" id="g3B-O0-wp7"/>
+                <outlet property="titleLabel" destination="RTm-CK-BHJ" id="14o-bF-3Ba"/>
+            </connections>
+            <point key="canvasLocation" x="247.69230769230768" y="77.132701421800945"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Mask-1" width="327" height="196"/>
+        <image name="shadowImage" width="436" height="261.33334350585938"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SocialTableViewCell" rowHeight="51" id="KGk-i7-Jjw" customClass="SocialTableViewCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="328" height="51"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xw6-2L-d4E">
+                        <rect key="frame" x="0.0" y="0.0" width="328" height="50"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uTv-6m-gCl">
+                                <rect key="frame" x="25" y="10" width="130" height="30"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_twitter" translatesAutoresizingMaskIntoConstraints="NO" id="LlF-ug-6jr">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Prz-vz-eNZ"/>
+                                            <constraint firstAttribute="width" constant="30" id="xlm-j4-Fbk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_instagram" translatesAutoresizingMaskIntoConstraints="NO" id="VBN-bm-loF">
+                                        <rect key="frame" x="50" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Hca-St-00T"/>
+                                            <constraint firstAttribute="width" constant="30" id="wVs-0j-nVc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ic_linkdien" translatesAutoresizingMaskIntoConstraints="NO" id="LW7-vT-QtO">
+                                        <rect key="frame" x="100" y="0.0" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="ZsO-yG-FL6"/>
+                                            <constraint firstAttribute="height" constant="30" id="b2r-Yq-Qmj"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uTv-6m-gCl" secondAttribute="bottom" constant="10" id="UeJ-TW-CgS"/>
+                            <constraint firstItem="uTv-6m-gCl" firstAttribute="leading" secondItem="xw6-2L-d4E" secondAttribute="leading" constant="25" id="WfP-qD-3Pw"/>
+                            <constraint firstItem="uTv-6m-gCl" firstAttribute="top" secondItem="xw6-2L-d4E" secondAttribute="top" constant="10" id="nSt-Gf-U1i"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="xw6-2L-d4E" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Sw-5h-Ob8"/>
+                    <constraint firstAttribute="bottom" secondItem="xw6-2L-d4E" secondAttribute="bottom" id="Ymm-2Q-iIU"/>
+                    <constraint firstItem="xw6-2L-d4E" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="i7k-uF-ocU"/>
+                    <constraint firstAttribute="trailing" secondItem="xw6-2L-d4E" secondAttribute="trailing" id="jmX-gK-21S"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="Iad-CX-Nha"/>
+            <connections>
+                <outlet property="instagramImage" destination="VBN-bm-loF" id="hvR-gV-lx9"/>
+                <outlet property="linkedInImage" destination="LW7-vT-QtO" id="pMI-Y2-3dR"/>
+                <outlet property="twitterImage" destination="LlF-ug-6jr" id="Hgx-uB-eOb"/>
+            </connections>
+            <point key="canvasLocation" x="-35.384615384615387" y="23.104265402843602"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ic_linkdien" width="35.666667938232422" height="35.666667938232422"/>
+        <image name="ic_instagram" width="36" height="35.333332061767578"/>
+        <image name="ic_twitter" width="35.666667938232422" height="35.666667938232422"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

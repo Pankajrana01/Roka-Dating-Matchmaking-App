@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SharpSans-Semibold.otf">
+            <string>SharpSansTRIAL-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WishToHaveCollectionCell" id="gTV-IL-0wX" customClass="WishToHaveCollectionCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5yo-hV-VMa">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="127"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Marriage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxE-Fl-sS7">
+                                <rect key="frame" x="10" y="6" width="280" height="115"/>
+                                <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="12"/>
+                                <color key="textColor" red="0.02745098248" green="0.086274504660000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98431372640000003" green="0.90588235859999999" blue="0.85490196939999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MxE-Fl-sS7" secondAttribute="bottom" constant="6" id="1Q2-jT-FWn"/>
+                            <constraint firstItem="MxE-Fl-sS7" firstAttribute="leading" secondItem="5yo-hV-VMa" secondAttribute="leading" constant="10" id="4hQ-ep-fXZ"/>
+                            <constraint firstItem="MxE-Fl-sS7" firstAttribute="top" secondItem="5yo-hV-VMa" secondAttribute="top" constant="6" id="beY-F6-T3V"/>
+                            <constraint firstAttribute="trailing" secondItem="MxE-Fl-sS7" secondAttribute="trailing" constant="10" id="eFI-Bv-kuM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="7"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="5yo-hV-VMa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0cE-CK-fl6"/>
+                <constraint firstItem="5yo-hV-VMa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1HE-lt-eWS"/>
+                <constraint firstAttribute="bottom" secondItem="5yo-hV-VMa" secondAttribute="bottom" id="5kn-kS-oIA"/>
+                <constraint firstAttribute="trailing" secondItem="5yo-hV-VMa" secondAttribute="trailing" id="dhe-uv-rHc"/>
+            </constraints>
+            <size key="customSize" width="300" height="127"/>
+            <connections>
+                <outlet property="wishLabel" destination="MxE-Fl-sS7" id="GdC-Aq-Do8"/>
+            </connections>
+            <point key="canvasLocation" x="329.7709923664122" y="38.380281690140848"/>
+        </collectionViewCell>
+    </objects>
+</document>

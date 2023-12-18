@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserImageTableCell" rowHeight="387" id="KGk-i7-Jjw" customClass="UserImageTableCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="516" height="387"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="516" height="387"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMH-sM-Qen">
+                        <rect key="frame" x="15" y="7.6666666666666572" width="486" height="358"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oCd-SL-HsC">
+                                <rect key="frame" x="0.0" y="0.0" width="486" height="358"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_Overlay" translatesAutoresizingMaskIntoConstraints="NO" id="zG8-41-rvE">
+                                <rect key="frame" x="0.0" y="0.0" width="486" height="358"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zG8-41-rvE" firstAttribute="leading" secondItem="eMH-sM-Qen" secondAttribute="leading" id="2fA-Hm-cvn"/>
+                            <constraint firstItem="oCd-SL-HsC" firstAttribute="leading" secondItem="eMH-sM-Qen" secondAttribute="leading" id="63o-qj-xeq"/>
+                            <constraint firstItem="oCd-SL-HsC" firstAttribute="top" secondItem="eMH-sM-Qen" secondAttribute="top" id="J8z-79-ebF"/>
+                            <constraint firstItem="zG8-41-rvE" firstAttribute="top" secondItem="eMH-sM-Qen" secondAttribute="top" id="JOg-2V-y3M"/>
+                            <constraint firstAttribute="trailing" secondItem="zG8-41-rvE" secondAttribute="trailing" id="eaW-gm-o2E"/>
+                            <constraint firstAttribute="height" constant="358" id="hvg-lG-VMj"/>
+                            <constraint firstAttribute="bottom" secondItem="zG8-41-rvE" secondAttribute="bottom" id="mPo-qH-CeR"/>
+                            <constraint firstAttribute="bottom" secondItem="oCd-SL-HsC" secondAttribute="bottom" id="uP0-RO-o6C"/>
+                            <constraint firstAttribute="trailing" secondItem="oCd-SL-HsC" secondAttribute="trailing" id="vSO-Ba-Bef"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="eMH-sM-Qen" secondAttribute="bottom" constant="7.5" id="44l-pT-DtJ"/>
+                    <constraint firstAttribute="trailing" secondItem="eMH-sM-Qen" secondAttribute="trailing" constant="15" id="Avo-eS-9wq"/>
+                    <constraint firstItem="eMH-sM-Qen" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="fsh-qB-ukp"/>
+                    <constraint firstItem="eMH-sM-Qen" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7.5" id="rAc-UM-enY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="userImageView" destination="oCd-SL-HsC" id="u0c-UF-Ddl"/>
+            </connections>
+            <point key="canvasLocation" x="285.49618320610688" y="132.74647887323945"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_Overlay" width="375" height="812"/>
+    </resources>
+</document>

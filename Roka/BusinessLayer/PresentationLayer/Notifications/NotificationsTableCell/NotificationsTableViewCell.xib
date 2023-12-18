@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SharpSans-Semibold.otf">
+            <string>SharpSansTRIAL-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationsTableViewCell" rowHeight="85" id="KGk-i7-Jjw" customClass="NotificationsTableViewCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="308" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New matches" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFA-bd-t47">
+                        <rect key="frame" x="24" y="23.333333333333336" width="222" height="21.333333333333336"/>
+                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="16"/>
+                        <color key="textColor" red="0.02745098248" green="0.086274504660000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You just got a new match" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jic-es-BlK">
+                        <rect key="frame" x="24" y="47.666666666666664" width="222" height="17.333333333333336"/>
+                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="13"/>
+                        <color key="textColor" red="0.21960783" green="0.270588249" blue="0.35686278339999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ic_toggle_onPrivate" translatesAutoresizingMaskIntoConstraints="NO" id="GAy-om-eDH">
+                        <rect key="frame" x="251" y="33" width="34" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="Kvn-jj-9Mh"/>
+                            <constraint firstAttribute="width" constant="34" id="Px6-nf-QaE"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V58-js-ebu">
+                        <rect key="frame" x="237.33333333333334" y="25.333333333333332" width="61.333333333333343" height="34.333333333333343"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="onImageClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hnQ-hj-L8J"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6p-GJ-neL">
+                        <rect key="frame" x="25" y="84" width="258" height="1"/>
+                        <color key="backgroundColor" name="AppSeparator"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="1fG-fP-0jN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="n6p-GJ-neL" secondAttribute="bottom" id="ELD-K6-i3N"/>
+                    <constraint firstAttribute="trailing" secondItem="GAy-om-eDH" secondAttribute="trailing" constant="23" id="HWQ-ZL-p84"/>
+                    <constraint firstItem="GAy-om-eDH" firstAttribute="leading" secondItem="WFA-bd-t47" secondAttribute="trailing" constant="5" id="K7X-FB-xSR"/>
+                    <constraint firstItem="Jic-es-BlK" firstAttribute="leading" secondItem="WFA-bd-t47" secondAttribute="leading" id="R3o-50-v1T"/>
+                    <constraint firstItem="WFA-bd-t47" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.8" id="S5w-aP-ZyX"/>
+                    <constraint firstItem="V58-js-ebu" firstAttribute="width" secondItem="GAy-om-eDH" secondAttribute="width" multiplier="1.8" id="TNN-e1-CX1"/>
+                    <constraint firstAttribute="trailing" secondItem="n6p-GJ-neL" secondAttribute="trailing" constant="25" id="bGO-5A-uTZ"/>
+                    <constraint firstItem="WFA-bd-t47" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24.000000000000007" id="eTx-uB-Tgq"/>
+                    <constraint firstItem="n6p-GJ-neL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="gnw-v5-I9X"/>
+                    <constraint firstItem="GAy-om-eDH" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="hCY-f7-2WV"/>
+                    <constraint firstItem="V58-js-ebu" firstAttribute="centerY" secondItem="GAy-om-eDH" secondAttribute="centerY" id="hyh-iZ-gB2"/>
+                    <constraint firstItem="V58-js-ebu" firstAttribute="centerX" secondItem="GAy-om-eDH" secondAttribute="centerX" id="ieQ-x2-0j4"/>
+                    <constraint firstItem="V58-js-ebu" firstAttribute="height" secondItem="GAy-om-eDH" secondAttribute="height" multiplier="1.8" id="rRe-Qt-EKD"/>
+                    <constraint firstItem="Jic-es-BlK" firstAttribute="top" secondItem="WFA-bd-t47" secondAttribute="bottom" constant="3" id="ucG-nZ-Buc"/>
+                    <constraint firstItem="Jic-es-BlK" firstAttribute="trailing" secondItem="WFA-bd-t47" secondAttribute="trailing" id="wV5-xE-5XK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageToggle" destination="GAy-om-eDH" id="vtW-Ts-Lni"/>
+                <outlet property="labelDescription" destination="Jic-es-BlK" id="vVl-BE-BFw"/>
+                <outlet property="labelStatus" destination="WFA-bd-t47" id="W8b-e1-ykc"/>
+                <outlet property="toggleButton" destination="V58-js-ebu" id="BgH-vO-1No"/>
+            </connections>
+            <point key="canvasLocation" x="-89.230769230769226" y="35.189573459715639"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ic_toggle_onPrivate" width="31" height="18"/>
+        <namedColor name="AppSeparator">
+            <color red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

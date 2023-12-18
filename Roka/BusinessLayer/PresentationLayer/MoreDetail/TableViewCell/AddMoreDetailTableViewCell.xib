@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SharpSans-Semibold.otf">
+            <string>SharpSansTRIAL-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddMoreDetailTableViewCell" rowHeight="75" id="KGk-i7-Jjw" customClass="AddMoreDetailTableViewCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GO7-5b-Bl0">
+                        <rect key="frame" x="0.0" y="28.666666666666671" width="0.0" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="d1U-ad-oFg"/>
+                            <constraint firstAttribute="height" constant="18" id="oOe-5g-EwY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gES-je-i7l">
+                        <rect key="frame" x="15" y="15" width="265" height="0.0"/>
+                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="16"/>
+                        <color key="textColor" name="AppTitleBlueColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="Ic_arrow 1" translatesAutoresizingMaskIntoConstraints="NO" id="7Gd-Je-Lhs">
+                        <rect key="frame" x="290" y="10.333333333333336" width="15" height="12.666666666666664"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="896-O5-RcE">
+                        <rect key="frame" x="15" y="69" width="290" height="1"/>
+                        <color key="backgroundColor" red="0.80392156862745101" green="0.81568627450980391" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="a1e-is-xHk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MNk-W9-e44">
+                        <rect key="frame" x="15" y="21" width="265" height="0.0"/>
+                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="13"/>
+                        <color key="textColor" name="AppDescColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="896-O5-RcE" firstAttribute="trailing" secondItem="7Gd-Je-Lhs" secondAttribute="trailing" id="9LH-E4-gGy"/>
+                    <constraint firstItem="MNk-W9-e44" firstAttribute="trailing" secondItem="gES-je-i7l" secondAttribute="trailing" id="JVe-Vs-EKJ"/>
+                    <constraint firstAttribute="bottom" secondItem="896-O5-RcE" secondAttribute="bottom" constant="5" id="MLb-6B-CH2"/>
+                    <constraint firstItem="MNk-W9-e44" firstAttribute="leading" secondItem="gES-je-i7l" secondAttribute="leading" id="Uc9-94-mqK"/>
+                    <constraint firstItem="gES-je-i7l" firstAttribute="leading" secondItem="GO7-5b-Bl0" secondAttribute="trailing" constant="15" id="UmI-mO-ixM"/>
+                    <constraint firstAttribute="trailing" secondItem="7Gd-Je-Lhs" secondAttribute="trailing" constant="15" id="VhU-i8-eue"/>
+                    <constraint firstItem="gES-je-i7l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="X54-ZD-fk2"/>
+                    <constraint firstItem="7Gd-Je-Lhs" firstAttribute="centerY" secondItem="gES-je-i7l" secondAttribute="centerY" multiplier="1.1" id="ZPh-OX-MAf"/>
+                    <constraint firstItem="896-O5-RcE" firstAttribute="leading" secondItem="GO7-5b-Bl0" secondAttribute="leading" constant="15" id="c8q-gK-5ur"/>
+                    <constraint firstItem="MNk-W9-e44" firstAttribute="top" secondItem="gES-je-i7l" secondAttribute="bottom" constant="6" id="ex3-vb-mnH"/>
+                    <constraint firstItem="GO7-5b-Bl0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jqP-rz-hHD"/>
+                    <constraint firstItem="7Gd-Je-Lhs" firstAttribute="leading" secondItem="gES-je-i7l" secondAttribute="trailing" constant="10" id="oIN-YB-Nf1"/>
+                    <constraint firstItem="GO7-5b-Bl0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oeQ-Oj-dC1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="subTitle" destination="MNk-W9-e44" id="UMQ-Bu-K2V"/>
+                <outlet property="titleImage" destination="GO7-5b-Bl0" id="chx-I3-s0N"/>
+                <outlet property="titleLabel" destination="gES-je-i7l" id="6sQ-gC-wmV"/>
+            </connections>
+            <point key="canvasLocation" x="-29.23076923076923" y="22.748815165876778"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ic_arrow 1" width="15" height="12.666666984558105"/>
+        <namedColor name="AppDescColor">
+            <color red="0.20784313725490197" green="0.27058823529411763" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="AppTitleBlueColor">
+            <color red="0.011764705882352941" green="0.086274509803921567" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

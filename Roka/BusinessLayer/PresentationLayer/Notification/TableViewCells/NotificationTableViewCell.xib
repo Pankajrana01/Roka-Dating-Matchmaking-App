@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SharpSans-Medium.otf">
+            <string>SharpSansTRIAL-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationTableViewCell" rowHeight="91" id="KGk-i7-Jjw" customClass="NotificationTableViewCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="283" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="283" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oCA-ke-IQ5">
+                        <rect key="frame" x="0.0" y="5" width="283" height="104"/>
+                        <color key="backgroundColor" name="AppSeparator"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="gTR-pa-UBF">
+                        <rect key="frame" x="15" y="27" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="Oqj-st-2sl"/>
+                            <constraint firstAttribute="height" constant="60" id="sxS-sR-EQI"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="liked your profile. Like them back for a match." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZn-sP-VHJ">
+                        <rect key="frame" x="90" y="20" width="183" height="41"/>
+                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Medium" family="Sharp Sans TRIAL" pointSize="14"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fSJ-AY-v6P">
+                        <rect key="frame" x="90" y="64" width="62.666666666666657" height="30"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_heart_selected-1" translatesAutoresizingMaskIntoConstraints="NO" id="tJO-82-2AA">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="AOd-he-RgZ"/>
+                                    <constraint firstAttribute="width" constant="30" id="FCF-VA-JDM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="time" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAe-Ya-zit">
+                                <rect key="frame" x="35" y="0.0" width="27.666666666666671" height="30"/>
+                                <fontDescription key="fontDescription" name="SharpSansTRIAL-Medium" family="Sharp Sans TRIAL" pointSize="12"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="SDr-zi-8Lt"/>
+                        </constraints>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i1j-lT-Z0Q">
+                        <rect key="frame" x="20" y="113" width="243" height="1"/>
+                        <color key="backgroundColor" name="AppSeparator"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="EMf-El-KWv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.80392156862745101" green="0.81568627450980391" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oCA-ke-IQ5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6q2-Lb-ej9"/>
+                    <constraint firstItem="dZn-sP-VHJ" firstAttribute="leading" secondItem="gTR-pa-UBF" secondAttribute="trailing" constant="15" id="8Cv-9L-DFR"/>
+                    <constraint firstItem="fSJ-AY-v6P" firstAttribute="top" secondItem="dZn-sP-VHJ" secondAttribute="bottom" constant="3" id="B1F-ol-rKO"/>
+                    <constraint firstAttribute="trailing" secondItem="i1j-lT-Z0Q" secondAttribute="trailing" constant="20" id="BSs-0s-e7H"/>
+                    <constraint firstItem="gTR-pa-UBF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HAO-Lk-fWT"/>
+                    <constraint firstItem="dZn-sP-VHJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="JCD-7d-e56"/>
+                    <constraint firstAttribute="bottom" secondItem="i1j-lT-Z0Q" secondAttribute="bottom" id="SqS-nb-GlT"/>
+                    <constraint firstAttribute="trailing" secondItem="oCA-ke-IQ5" secondAttribute="trailing" id="ZRn-Hy-pbP"/>
+                    <constraint firstItem="i1j-lT-Z0Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="bT1-rk-Q3B"/>
+                    <constraint firstItem="fSJ-AY-v6P" firstAttribute="leading" secondItem="dZn-sP-VHJ" secondAttribute="leading" id="h7M-K3-l1U"/>
+                    <constraint firstAttribute="bottom" secondItem="fSJ-AY-v6P" secondAttribute="bottom" constant="20" id="jFB-j2-MKx"/>
+                    <constraint firstAttribute="trailing" secondItem="dZn-sP-VHJ" secondAttribute="trailing" constant="10" id="pMG-lw-icX"/>
+                    <constraint firstAttribute="bottom" secondItem="oCA-ke-IQ5" secondAttribute="bottom" constant="5" id="wdZ-pA-fJa"/>
+                    <constraint firstItem="gTR-pa-UBF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="y7N-9a-zRn"/>
+                    <constraint firstItem="oCA-ke-IQ5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="zyS-g7-XZX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="DescImage" destination="tJO-82-2AA" id="Vpi-3J-dVM"/>
+                <outlet property="bgView" destination="oCA-ke-IQ5" id="7Ob-fy-WIE"/>
+                <outlet property="labelDescription" destination="dZn-sP-VHJ" id="F6K-11-4cf"/>
+                <outlet property="labelTime" destination="cAe-Ya-zit" id="TiF-AJ-oVo"/>
+                <outlet property="profileImage" destination="gTR-pa-UBF" id="4nA-gk-kpq"/>
+            </connections>
+            <point key="canvasLocation" x="-168.46153846153845" y="19.194312796208528"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Avatar" width="78" height="78"/>
+        <image name="ic_heart_selected-1" width="36" height="36"/>
+        <namedColor name="AppSeparator">
+            <color red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

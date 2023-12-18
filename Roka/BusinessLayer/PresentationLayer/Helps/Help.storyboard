@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SharpSans-Semibold.otf">
+            <string>SharpSansTRIAL-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Help View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HelpViewController" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="HelpViewController" customModule="Roka" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFb-Pd-ygN">
+                                <rect key="frame" x="0.0" y="47" width="390" height="18"/>
+                                <color key="backgroundColor" name="AppSeparator"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="VBb-7f-GVL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ic_Logo_nav" translatesAutoresizingMaskIntoConstraints="NO" id="TJo-44-hVz">
+                                <rect key="frame" x="120" y="297" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1yu-P4-QCj"/>
+                                    <constraint firstAttribute="width" constant="150" id="kjC-IE-JPu"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQy-mW-U5b">
+                                <rect key="frame" x="32" y="372" width="326" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="tintColor" red="0.4941176471" green="0.0" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="osp-An-L1t"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="To report any suspicious behavior of the users. Kindly email us at ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.062745101750000004" green="0.062745101750000004" blue="0.062745101750000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="help@rokadating.com">
+                                        <attributes>
+                                            <color key="NSColor" red="0.49411764705882355" green="0.0" blue="0.8901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="2Gd-e1-IMr">
+                                <rect key="frame" x="17" y="673" width="356" height="104"/>
+                                <subviews>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akN-57-jed">
+                                        <rect key="frame" x="0.0" y="0.0" width="356" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="Pnm-k1-n4o"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Delete account">
+                                            <color key="titleColor" red="0.61176472900000001" green="0.63529413940000001" blue="0.6784313917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.8078432083" green="0.8156862855" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="23"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="deleteButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hRO-GD-kzI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="up8-c1-s2I">
+                                        <rect key="frame" x="0.0" y="58" width="356" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="mAI-FK-xYs"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="16"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Deactivate account">
+                                            <color key="titleColor" red="0.61176472900000001" green="0.63529413940000001" blue="0.6784313917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.8078432083" green="0.8156862855" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="23"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="deactivateButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="T3d-ai-KdW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2Gd-e1-IMr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="17" id="07F-df-nLO"/>
+                            <constraint firstItem="WQy-mW-U5b" firstAttribute="top" secondItem="TJo-44-hVz" secondAttribute="bottom" constant="25" id="4uZ-eL-kv7"/>
+                            <constraint firstItem="TJo-44-hVz" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="5SP-QH-yRd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="2Gd-e1-IMr" secondAttribute="bottom" constant="33" id="AQR-Ka-95n"/>
+                            <constraint firstItem="WQy-mW-U5b" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="32" id="F5j-C1-YBf"/>
+                            <constraint firstItem="WQy-mW-U5b" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FCK-UT-8Dd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2Gd-e1-IMr" secondAttribute="trailing" constant="17" id="Hlc-D0-GUd"/>
+                            <constraint firstItem="LFb-Pd-ygN" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="VBo-Uf-rng"/>
+                            <constraint firstItem="LFb-Pd-ygN" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="aiF-za-Iff"/>
+                            <constraint firstItem="WQy-mW-U5b" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="e2a-wt-rVa"/>
+                            <constraint firstItem="LFb-Pd-ygN" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lwj-Oq-BgA"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WQy-mW-U5b" secondAttribute="trailing" constant="32" id="nz7-x3-CbO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deactiveButton" destination="up8-c1-s2I" id="juU-4y-JM1"/>
+                        <outlet property="deleteButton" destination="akN-57-jed" id="LrH-n4-ihv"/>
+                        <outlet property="topView" destination="LFb-Pd-ygN" id="HmI-PD-FQV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135.38461538461539" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Ic_Logo_nav" width="96.666664123535156" height="23.666666030883789"/>
+        <namedColor name="AppSeparator">
+            <color red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

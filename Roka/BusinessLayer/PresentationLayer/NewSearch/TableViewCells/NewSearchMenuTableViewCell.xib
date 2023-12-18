@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SharpSans-Semibold.otf">
+            <string>SharpSansTRIAL-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewSearchMenuTableViewCell" rowHeight="111" id="lTJ-CI-Rd1" customClass="NewSearchMenuTableViewCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="625" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lTJ-CI-Rd1" id="7em-Z1-OZJ">
+                <rect key="frame" x="0.0" y="0.0" width="625" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_profile" translatesAutoresizingMaskIntoConstraints="NO" id="dFu-q0-N1l">
+                        <rect key="frame" x="16" y="46.666666666666664" width="0.0" height="17.999999999999993"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="nI1-v1-ClE"/>
+                            <constraint firstAttribute="height" constant="18" id="p8X-os-dhV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="fcg-3P-2uS">
+                        <rect key="frame" x="18" y="45" width="44" height="21.333333333333329"/>
+                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="16"/>
+                        <color key="textColor" red="0.02745098248" green="0.086274504660000001" blue="0.19607841970000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="z0p-y4-S1o">
+                        <rect key="frame" x="0.0" y="110.66666666666667" width="625" height="0.3333333333333286"/>
+                        <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="qxm-JY-oxg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SharpSansTRIAL-Semibold" family="Sharp Sans TRIAL" pointSize="16"/>
+                        <color key="textColor" name="AppTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="z0p-y4-S1o" secondAttribute="trailing" id="18f-6q-MxZ"/>
+                    <constraint firstItem="dFu-q0-N1l" firstAttribute="centerY" secondItem="7em-Z1-OZJ" secondAttribute="centerY" id="Bv4-eh-aJy"/>
+                    <constraint firstItem="fcg-3P-2uS" firstAttribute="leading" secondItem="7em-Z1-OZJ" secondAttribute="leading" constant="18" id="EzJ-zc-xbh"/>
+                    <constraint firstItem="z0p-y4-S1o" firstAttribute="leading" secondItem="7em-Z1-OZJ" secondAttribute="leading" id="Wpx-hf-efH"/>
+                    <constraint firstItem="dFu-q0-N1l" firstAttribute="leading" secondItem="7em-Z1-OZJ" secondAttribute="leading" constant="16" id="bnD-5b-Vt2"/>
+                    <constraint firstItem="fcg-3P-2uS" firstAttribute="centerY" secondItem="dFu-q0-N1l" secondAttribute="centerY" id="khk-Jo-1Fx"/>
+                    <constraint firstAttribute="bottom" secondItem="z0p-y4-S1o" secondAttribute="bottom" id="uuB-f0-0I8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="zx3-5C-CkC"/>
+            <connections>
+                <outlet property="imageCell" destination="dFu-q0-N1l" id="mEu-2y-e68"/>
+                <outlet property="label" destination="fcg-3P-2uS" id="G83-ku-nZc"/>
+            </connections>
+            <point key="canvasLocation" x="223.84615384615384" y="-265.521327014218"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_profile" width="18" height="18"/>
+        <namedColor name="AppTextColor">
+            <color red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

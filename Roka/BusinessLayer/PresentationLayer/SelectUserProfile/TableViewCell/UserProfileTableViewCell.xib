@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Bold.OTF">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SF-Pro-Display-Medium.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UserProfileTableViewCell" rowHeight="200" id="KGk-i7-Jjw" customClass="UserProfileTableViewCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="e7c-J6-Cb6">
+                        <rect key="frame" x="25" y="0.0" width="319" height="200"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vXY-mB-9Cs">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Looking for love" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ge2-U8-MzQ">
+                        <rect key="frame" x="35" y="107.33333333333333" width="143.66666666666666" height="23.999999999999986"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="20"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet consetetur ede sadipscing elitr sed diam nonumy eirmod." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TfJ-5m-iCO">
+                        <rect key="frame" x="35" y="136.33333333333334" width="299" height="33.666666666666657"/>
+                        <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="14"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="e7c-J6-Cb6" secondAttribute="bottom" id="8Ti-Ei-Kbv"/>
+                    <constraint firstItem="e7c-J6-Cb6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="CGT-4q-IAK"/>
+                    <constraint firstAttribute="trailing" secondItem="TfJ-5m-iCO" secondAttribute="trailing" constant="35" id="Fkh-c6-ocW"/>
+                    <constraint firstAttribute="trailing" secondItem="e7c-J6-Cb6" secondAttribute="trailing" constant="25" id="Myx-Cs-dFH"/>
+                    <constraint firstItem="e7c-J6-Cb6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NF4-Ow-toF"/>
+                    <constraint firstItem="ge2-U8-MzQ" firstAttribute="leading" secondItem="TfJ-5m-iCO" secondAttribute="leading" id="XvW-pN-qsD"/>
+                    <constraint firstItem="TfJ-5m-iCO" firstAttribute="top" secondItem="ge2-U8-MzQ" secondAttribute="bottom" constant="5" id="ZuW-zm-bMK"/>
+                    <constraint firstItem="TfJ-5m-iCO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="mro-yC-FZ2"/>
+                    <constraint firstAttribute="bottom" secondItem="TfJ-5m-iCO" secondAttribute="bottom" constant="30" id="qGm-Zq-ZFm"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="20"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="e7c-J6-Cb6" id="xCi-Dy-5l9"/>
+                <outlet property="descLabel" destination="TfJ-5m-iCO" id="HxQ-8Q-i2E"/>
+                <outlet property="titleLabel" destination="ge2-U8-MzQ" id="2uw-kA-N0r"/>
+            </connections>
+            <point key="canvasLocation" x="45.38461538461538" y="76.066350710900466"/>
+        </tableViewCell>
+    </objects>
+</document>

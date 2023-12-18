@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Medium.OTF">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.OTF">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="79" id="KGk-i7-Jjw" customClass="MovieTableViewCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Rk-c4-Mjp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ethnicity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5Z-HA-Vyq">
+                                <rect key="frame" x="25" y="10" width="67.666666666666671" height="35.666666666666664"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" text="Americans in the United Kingdom" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0I-pY-hUg">
+                                <rect key="frame" x="25" y="50.666666666666664" width="285" height="19.333333333333336"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="O0I-pY-hUg" secondAttribute="trailing" constant="10" id="8do-sQ-1af"/>
+                            <constraint firstItem="b5Z-HA-Vyq" firstAttribute="leading" secondItem="8Rk-c4-Mjp" secondAttribute="leading" constant="25" id="EVA-CB-b5h"/>
+                            <constraint firstItem="O0I-pY-hUg" firstAttribute="leading" secondItem="b5Z-HA-Vyq" secondAttribute="leading" id="P8f-21-cIe"/>
+                            <constraint firstAttribute="bottom" secondItem="O0I-pY-hUg" secondAttribute="bottom" constant="9" id="dfy-FJ-AcA"/>
+                            <constraint firstItem="b5Z-HA-Vyq" firstAttribute="top" secondItem="8Rk-c4-Mjp" secondAttribute="top" constant="10" id="onV-gA-TWv"/>
+                            <constraint firstItem="O0I-pY-hUg" firstAttribute="top" secondItem="b5Z-HA-Vyq" secondAttribute="bottom" constant="5" id="xwj-7a-DSL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="8Rk-c4-Mjp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DOq-5V-F7j"/>
+                    <constraint firstAttribute="bottom" secondItem="8Rk-c4-Mjp" secondAttribute="bottom" id="K4Z-kz-psX"/>
+                    <constraint firstItem="8Rk-c4-Mjp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="UAc-9i-ppI"/>
+                    <constraint firstAttribute="trailing" secondItem="8Rk-c4-Mjp" secondAttribute="trailing" id="hg3-76-44H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descLable" destination="O0I-pY-hUg" id="UOW-I1-Lnn"/>
+                <outlet property="titleLabel" destination="b5Z-HA-Vyq" id="nIe-Ll-0c7"/>
+            </connections>
+            <point key="canvasLocation" x="-29.23076923076923" y="33.056872037914694"/>
+        </tableViewCell>
+    </objects>
+</document>

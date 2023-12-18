@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SocialTableCell" id="KGk-i7-Jjw" customClass="SocialTableCell" customModule="Roka" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8Ay-K2-Z55">
+                        <rect key="frame" x="17" y="0.0" width="130" height="35.666666666666664"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_twitter" translatesAutoresizingMaskIntoConstraints="NO" id="jgp-eK-QRz">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="35.666666666666664"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kPY-IE-Ech"/>
+                                    <constraint firstAttribute="width" constant="30" id="wVg-P5-Zak"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_instagram" translatesAutoresizingMaskIntoConstraints="NO" id="Zve-Fs-83A">
+                                <rect key="frame" x="50" y="0.0" width="30" height="35.666666666666664"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ic_linkdien" translatesAutoresizingMaskIntoConstraints="NO" id="08y-L8-qKl">
+                                <rect key="frame" x="100" y="0.0" width="30" height="35.666666666666664"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8Ay-K2-Z55" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="17" id="BsS-NN-eP0"/>
+                    <constraint firstItem="8Ay-K2-Z55" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QCM-q5-le4"/>
+                    <constraint firstAttribute="bottom" secondItem="8Ay-K2-Z55" secondAttribute="bottom" id="nfm-3n-YNy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="instagramImage" destination="Zve-Fs-83A" id="dUj-je-8Gf"/>
+                <outlet property="linkedInImage" destination="08y-L8-qKl" id="eLl-OB-IVZ"/>
+                <outlet property="twitterImage" destination="jgp-eK-QRz" id="TGz-2h-1q9"/>
+            </connections>
+            <point key="canvasLocation" x="-56" y="20"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Ic_linkdien" width="35.666667938232422" height="35.666667938232422"/>
+        <image name="ic_instagram" width="36" height="35.333332061767578"/>
+        <image name="ic_twitter" width="35.666667938232422" height="35.666667938232422"/>
+    </resources>
+</document>
